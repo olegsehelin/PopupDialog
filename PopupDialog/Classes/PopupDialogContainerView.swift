@@ -97,13 +97,13 @@ final public class PopupDialogContainerView: UIView {
         if #available(iOS 9.0, *) {
             let buttonStackView = UIStackView()
             buttonStackView.translatesAutoresizingMaskIntoConstraints = false
-            buttonStackView.distribution = .fillEqually
+            buttonStackView.distribution = .fillProportionally
             buttonStackView.spacing = 0
             return buttonStackView
         } else {
             let buttonStackView = TZStackView()
             buttonStackView.translatesAutoresizingMaskIntoConstraints = false
-            buttonStackView.distribution = .fillEqually
+            buttonStackView.distribution = .fillProportionally
             buttonStackView.spacing = 0
             return buttonStackView
         }
